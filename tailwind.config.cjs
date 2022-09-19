@@ -4,7 +4,9 @@ module.exports = {
     './src/**/*.jsx'
   ],
   theme: {
-    extend: {},
+    extend: {
+      display: ["group-hover"]
+    },
   },
   plugins: [],
 }
