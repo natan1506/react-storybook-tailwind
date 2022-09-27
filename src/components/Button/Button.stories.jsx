@@ -10,7 +10,11 @@ export default {
 };
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template = (args) => <Button {...args} />;
+const Template = (args) => (
+  <div className='flex flex-1 w-full h-screen justify-center items-center'>
+    <Button {...args} />
+  </div>
+);
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
@@ -26,12 +30,12 @@ Secondary.args = {
 
 export const Large = Template.bind({});
 Large.args = {
-  sizeText: 'lg',
+  size: 'large',
   label: 'Button',
 };
 
 export const Small = Template.bind({});
 Small.args = {
-  sizeText: 'sm',
+  size: 'small',
   label: 'Button',
 };

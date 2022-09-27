@@ -1,5 +1,7 @@
 import { Check, HeartStraight, DotsThreeVertical } from 'phosphor-react'
-export const Card = ({data}) => {
+
+
+export const Card = ({ data }) => {
   return (
     <>
       <a className="flex h-32 rounded-xl overflow-hidden my-2 mx-3 shadow-lg sm:flex hover:bg-gray-100 group">

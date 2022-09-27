@@ -9,8 +9,6 @@ export default {
 
 export const Template = (args) => <Card {...args} />;
 Template.args = {
-  data: {
-    title: 'UX: entenda a experiencia de usuario',
-    subtitle: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam ...'
-  },
+  title: 'UX: entenda a experiencia de usuario',
+  subtitle: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam ...'
 }

@@ -3,6 +3,7 @@ import { ListCard } from './components/ListCard'
 import { Login } from './pages/Login'
 import { Header } from './components/Header'
 import './styles/main.css'
+import { Button } from './components/Button'
 
 const data = [
   {
@@ -25,9 +26,17 @@ const data = [
 function App() {
   return (
     <div className="App">
-      <Header />
-      {/* <ListCard data={data} /> */}
+      {/* <Header /> */}
+      <ListCard data={data} />
       {/* <Login /> */}
+      <Button 
+        size='lg'
+        label='Button'
+      />
+      <Button 
+        size='sm'
+        label='Button'
+      />
     </div>
   )
 }
